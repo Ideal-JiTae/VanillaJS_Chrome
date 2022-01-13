@@ -1,34 +1,47 @@
-//비효율적
-const playerName = "jitae";
-const playerPoints = 121212;
-const playerHandsome = false;
-const playerFat = "little bit";
+//함수가 없더라면...
+console.log("Hello my name is Nico");
+console.log("Hello my name is 철수");
+console.log("Hello my name is 짱아");
+console.log("Hello my name is 짱구");
+console.log("Hello my name is 유리");
+console.log("Hello my name is 훈이");
 
-// 위에 것을 배열로 정리하면...? -> 이래도 비효율적 각각의 원소들이 무엇을 의미하는지 안 알려주고 있으니까!!
-const player = ["jitae",121212,false,"little bit"];
+//공통된 부분...Hello my name is
+//다른 부분... 뒤에 오는 이름들...
 
-//object로 만들자!!
-const player1 = {
+//개선 시키기 위해서는 함수 사용!
+function sayHello(){
+    console.log("Hello my name is ");
+}
 
-    name:"jitae",
-    points:10,
-    fat : true,
-};
+//함수 3번 실행
+sayHello();
+sayHello();
+sayHello();
 
-console.log(player1);
-console.log(player1.name)
+//인수(argument) 넣기
+//nameOfPerson은 인자값을 나타냅니다.
+//첫번째로 보내진 데이터가 nameOfPerson으로 들어가게됨!!
+function sayHello2(nameOfPerson){
+    console.log(nameOfPerson);
+}
 
-//접근해서 바꿀 수 있다는 거!!
-//여기서 의문 const로 된거는 바꿀수 없다며!!
-//constant 안에 무언가를 업데이트 할 때는 아무 문제가 없다!!
-player1.name="nico";
-console.log(player1.name)
+sayHello2("nico");
+sayHello2("dal");
+sayHello2("lynn");
 
-//객체에 원소 추가하기
-player1.lastname = "potato";
-console.log(player1)
+function meetPerson(person1,person2){
+    console.log(`${person1} meet ${person2}`)
+}
 
-//원소 = property
-//이렇게도 쓸수 있어요...!
-player1.points = player1.points + 15;
-console.log(player1.points);
+meetPerson("철수","영희");
+meetPerson("짱아","짱구");
+meetPerson("훈이","유리");
+
+function sayHello3(nameOfPerson,age){
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
+
+sayHello3("nico",10);
+sayHello3("dal",23);
+sayHello3("lynn",21);
