@@ -1,30 +1,34 @@
-//배열이 없다면...
-//전부 작성해야됨
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+//비효율적
+const playerName = "jitae";
+const playerPoints = 121212;
+const playerHandsome = false;
+const playerFat = "little bit";
 
-//이건 daysOfWeek 그냥 요일 쭉 더한거 
-//위 변수들이 없더라면 아래는 오류가 나버리겠지...
-const daysOfWeek = mon + tue + wed + thu + fri + sat + sun
-console.log(daysOfWeek);
+// 위에 것을 배열로 정리하면...? -> 이래도 비효율적 각각의 원소들이 무엇을 의미하는지 안 알려주고 있으니까!!
+const player = ["jitae",121212,false,"little bit"];
 
-//이게 바로 배열
-const daysOfWeekArray = [mon , tue , wed , thu , fri , sat , sun]
-console.log(daysOfWeekArray);
+//object로 만들자!!
+const player1 = {
 
-const nonsence = [1,2,"hello",false,null,true,undefined,"JiTae"];
-console.log(nonsence);
+    name:"jitae",
+    points:10,
+    fat : true,
+};
 
-const days =["mon" , "tue" , "wed" , "thu" , "fri" , "sat" , "sun"];
-//             0       1       2       3       4       5       6
-console.log(days[5]); // -> sat 이 출력될거임!!
+console.log(player1);
+console.log(player1.name)
 
-// Add one more array
-days.push("sun");
-console.log(days[6]);
-console.log(days);
+//접근해서 바꿀 수 있다는 거!!
+//여기서 의문 const로 된거는 바꿀수 없다며!!
+//constant 안에 무언가를 업데이트 할 때는 아무 문제가 없다!!
+player1.name="nico";
+console.log(player1.name)
+
+//객체에 원소 추가하기
+player1.lastname = "potato";
+console.log(player1)
+
+//원소 = property
+//이렇게도 쓸수 있어요...!
+player1.points = player1.points + 15;
+console.log(player1.points);
