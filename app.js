@@ -1,47 +1,24 @@
-//함수가 없더라면...
-console.log("Hello my name is Nico");
-console.log("Hello my name is 철수");
-console.log("Hello my name is 짱아");
-console.log("Hello my name is 짱구");
-console.log("Hello my name is 유리");
-console.log("Hello my name is 훈이");
-
-//공통된 부분...Hello my name is
-//다른 부분... 뒤에 오는 이름들...
-
-//개선 시키기 위해서는 함수 사용!
-function sayHello(){
-    console.log("Hello my name is ");
+function plus(a,b){
+    console.log(a+b);
 }
+plus(8,60);
 
-//함수 3번 실행
-sayHello();
-sayHello();
-sayHello();
-
-//인수(argument) 넣기
-//nameOfPerson은 인자값을 나타냅니다.
-//첫번째로 보내진 데이터가 nameOfPerson으로 들어가게됨!!
-function sayHello2(nameOfPerson){
-    console.log(nameOfPerson);
+function divide(a,b){
+    console.log(a/b);
 }
+divide(98,20)
 
-sayHello2("nico");
-sayHello2("dal");
-sayHello2("lynn");
+//아래 출력시 안뜨는 것을 볼수 있음 why? -> 인자는 함수 안에서만 존재하기 때문이지!!
+//console.log(a,b);
 
-function meetPerson(person1,person2){
-    console.log(`${person1} meet ${person2}`)
-}
+//player object
+const player = {
+    name: "jitae",
+    sayHello:function(ohterPersonsName){
+        console.log("hello " + ohterPersonsName +" Nice to meet you");
+    },
+};
 
-meetPerson("철수","영희");
-meetPerson("짱아","짱구");
-meetPerson("훈이","유리");
-
-function sayHello3(nameOfPerson,age){
-    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
-}
-
-sayHello3("nico",10);
-sayHello3("dal",23);
-sayHello3("lynn",21);
+console.log(player.name);
+player.sayHello("Nico");
+player.sayHello("lynn");
