@@ -1,7 +1,18 @@
+//Dom 조작하기
 // const hellos = document.getElementsByClassName("hello");
-
 // const title = document.getElementsByTagName("h1");
 // console.log(title)
-
 // const title = document.querySelector(".hello h1");
 // const title = document.querySelectorAll(".hello h1");
+
+//이벤트 생성하기
+const title = document.querySelector("div.hello:first-child h1");
+// console.dir(title);
+// title.style.color = "blue";
+
+function handletitleClick(){
+    console.log("title was clicked!");
+    title.style.color="blue";
+}
+
+title.addEventListener("click",handletitleClick);
