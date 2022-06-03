@@ -1,3 +1,7 @@
-const title = document.getElementById("title");
+// const hellos = document.getElementsByClassName("hello");
 
-title.innerText = "Got you!";
+// const title = document.getElementsByTagName("h1");
+// console.log(title)
+
+// const title = document.querySelector(".hello h1");
+// const title = document.querySelectorAll(".hello h1");
