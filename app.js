@@ -11,8 +11,20 @@ const title = document.querySelector("div.hello:first-child h1");
 // title.style.color = "blue";
 
 function handletitleClick(){
-    console.log("title was clicked!");
-    title.style.color="blue";
+    title.style.color = "blue";
+    title.innerText = "Mouse click";
+}
+
+function handleMouseEnter(){
+    title.style.color ="black";
+    title.innerText = "Mouse is here";
+}
+
+function handleMouseLeave(){
+    title.style.color ="black";
+    title.innerText = "Mouse is gone";
 }
 
 title.addEventListener("click",handletitleClick);
+title.addEventListener("mouseenter",handleMouseEnter);
+title.addEventListener("mouseleave",handleMouseLeave);
