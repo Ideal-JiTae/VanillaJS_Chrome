@@ -6,25 +6,48 @@
 // const title = document.querySelectorAll(".hello h1");
 
 //이벤트 생성하기
-const title = document.querySelector("div.hello:first-child h1");
+const h1 = document.querySelector("div.hello:first-child h1");
 // console.dir(title);
 // title.style.color = "blue";
 
 function handletitleClick(){
-    title.style.color = "blue";
-    title.innerText = "Mouse click";
+    h1.style.color = "blue";
+    h1.innerText = "Mouse click";
 }
 
 function handleMouseEnter(){
-    title.style.color ="black";
-    title.innerText = "Mouse is here";
+    h1.style.color ="black";
+    h1.innerText = "Mouse is here";
 }
 
 function handleMouseLeave(){
-    title.style.color ="black";
-    title.innerText = "Mouse is gone";
+    h1.style.color ="black";
+    h1.innerText = "Mouse is gone";
 }
 
-title.addEventListener("click",handletitleClick);
-title.addEventListener("mouseenter",handleMouseEnter);
-title.addEventListener("mouseleave",handleMouseLeave);
+h1.addEventListener("click",handletitleClick);
+h1.addEventListener("mouseenter",handleMouseEnter);
+h1.addEventListener("mouseleave",handleMouseLeave);
+
+function handleWindowResize(){
+    document.body.style.backgroundColor="tomato";
+}
+
+window.addEventListener("resize",handleWindowResize);
+
+function handleWindowCopy(){
+    alert("copier!");
+}
+
+window.addEventListener("copy",handleWindowCopy);
+
+function handleWindowOffline(){
+    alert("SOS no WIFI");
+}
+
+function handleWindowOnline(){
+    alert("ALL GOOOD");
+}
+
+window.addEventListener("offline",handleWindowOffline);
+window.addEventListener("online",handleWindowOnline);
