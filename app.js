@@ -16,4 +16,3 @@ function handleTitleClick(){
 }
 
 h1.addEventListener("click",handleTitleClick);
-// groom 깃 커밋 테스트
