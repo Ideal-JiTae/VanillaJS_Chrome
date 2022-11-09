@@ -10,15 +10,15 @@ function onLoginSubmit(event){
 	event.preventDefault();
 	//Form을 다시 숨겨줍니다.
 	loginForm.classList.add(HIDDEN_CLASSNAME);
+	//username 변수에 loginInput에 들어온 value값을 저장합니다.
+	const username = loginInput.value;
 	//로컬 스토리지에 key와 함께 username에 들어온(loginInput.value)를 저장합니다.
 	localStorage.setItem(USERNAME_KEY,username);
 	//paintGreetings 함수에 username 인자를 넣어 값을 호출합니다.
-	paintGreetings();
+	paintGreetings(username);
 }
 
-//저장하는 순간에 localStorage에 저장된 username의 값을 받아서 username에 저장합니다.
-function paintGreetings(){
-	const username = localStorage.getItem(USERNAME_KEY);
+function paintGreetings(username){
 	greeting.innerText=`Hello ${username}`;
 	greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -31,7 +31,7 @@ if(savedUsername===null){
 	loginForm.addEventListener("submit",onLoginSubmit);
 }else{
 	//Show the greetings
-	paintGreetings();
+	paintGreetings(savedUsername);
 }
 
 //savedUsername은 localStorage에 저장되어 있는 값에서 나옵니다.
