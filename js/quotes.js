@@ -95,4 +95,7 @@ const quotes = [
         quote : "If you really want to do something, you’ll find a way. If you do not, you’ll find an excuse.",
         author : "Jim Rohn",
     },
-]
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
