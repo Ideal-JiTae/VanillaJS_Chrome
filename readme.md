@@ -9,13 +9,13 @@
 - 클론코딩:[모멘텀](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
 
 ### 구현되는 내용
-- 시계 (Live Watch)
-- 명언 (Random)
-- 배경화면 (Random)
-- 로그인 (LocalStorage)
-- 위치 (Geolacation)
-- 날씨 (API)
-- 해야 할 일 (To do List)
+- [x] 시계 (Live Watch)
+- [x] 명언 (Random)
+- [x] 배경화면 (Random)
+- [x] 로그인 (LocalStorage)
+- [x] 위치 (Geolacation)
+- [x] 날씨 (API)
+- [x] 해야 할 일 (To do List)
 
 ### 추가 내용
 - 반응형
