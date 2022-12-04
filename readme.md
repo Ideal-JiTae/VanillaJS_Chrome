@@ -9,17 +9,16 @@
 - 클론코딩:[모멘텀](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
 
 ### 구현되는 내용
-
-- 배경화면 (매일 제각각 바뀜)
-  
-- 로그인 (사용자를 기억함 -> 새로고침 해도 사용자를 기억하는 것)
-  
-- 시계 (매 시각 마다 바뀜)
-  
+- 시계 (Live Watch)
+- 명언 (Random)
+- 배경화면 (Random)
+- 로그인 (LocalStorage)
 - 위치 (Geolacation)
-  
-- 날씨 (위치에 기반한 날씨 정보를 알려준다는 점)
+- 날씨 (API)
+- 해야 할 일 (To do List)
 
-- 명언 (무작위로 받아서 사용자에게 저장)
-
-- 해야 할 일 (To do List: 체크박스 형태로 구현되며 해결 했을시 해당 효과 구현->취소선이 그어짐) 
+### 추가 내용
+- 반응형
+- 로그아웃
+- 날씨 아이콘 로딩
+- 배경음악 재생
