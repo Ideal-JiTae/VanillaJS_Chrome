@@ -9,13 +9,16 @@ body{
 
 #clock{
     display: flex;
-    justify-content: center;
-    color: white;
-    z-index: 2;
     position: absolute;
+    justify-content: center;
     vertical-align: middle;
     text-align: center;
     align-items: center;
+    color: white;
+    z-index: 2;
+    top: 30%;
+    left: 38%;
+    font-size: 120px;
 }
 
 #greeting{
@@ -54,5 +57,5 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: -1;
 }
