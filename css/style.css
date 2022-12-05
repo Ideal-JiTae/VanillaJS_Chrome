@@ -9,6 +9,10 @@ body{
 
 #login-form{
     position: absolute;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid black;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
