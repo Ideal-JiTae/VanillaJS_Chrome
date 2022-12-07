@@ -8,7 +8,6 @@ body{
 
 #login-form{
     position: absolute;
-    justify-content: center;
     width: 580px;
     height: 32px;
     top: 40%;
