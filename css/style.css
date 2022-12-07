@@ -4,23 +4,38 @@
 
 body{
     margin: 0 auto;
-    display: flex;
 }
 
 #login-form{
     position: absolute;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 3px solid black;
+    justify-content: center;
+    width: 580px;
+    height: 32px;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 35%;
     z-index: 2;
-    text-align: center;
+}
+
+#login-form input:first-child{
+    width: 500px;
+    height: 32px;
     font-size: 15px;
-    color: whitesmoke;
-    opacity: 60%;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+}
+
+#login-form input:last-child{
+    width: 60px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
 }
 
 #greeting{
